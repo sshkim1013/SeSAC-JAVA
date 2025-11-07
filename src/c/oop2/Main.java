@@ -20,5 +20,9 @@ public class Main {
         Rectangle r1 = new Rectangle();
         Rectangle r2 = new Rectangle(10);
         Rectangle r3 = new Rectangle(20, 30);
+
+        User user = new User("홍길동", 20);
+        // user.name = "고길동";   <- 접근 불가능
+        user.setName("고길동");
     }
 }
