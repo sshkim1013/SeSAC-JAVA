@@ -7,6 +7,10 @@ class Parent {
     void show() {
         System.out.println("Parent.show");
     }
+
+    final void display() {
+        System.out.println("Parent.display");
+    }
 }
 
 class Child extends Parent {
@@ -17,6 +21,12 @@ class Child extends Parent {
     void show() {
         System.out.println("Child.show");
     }
+
+    // 부모에서 final 키워드가 붙은 메서드는 재정의 불가능!!
+    // @Override
+    // void display() {
+    //     System.out.println("Child.display");
+    // }
 }
 
 public class OverridingMain {
@@ -26,10 +36,11 @@ public class OverridingMain {
         Child child = new Child();
         Parent child2 = new Child();
 
-        System.out.println(child2.name);
-
         parent.show();
         child.show();
         child2.show();
+
+        // 필드는 오버라이딩 되지 않음.
+        System.out.println(child2.name);
     }
 }
