@@ -2,16 +2,24 @@ package d.inheritance.practice2.practice2_1;
 
 public class Zoo {
 
-    public static void main(String[] args) {
-        Animal[] animals = {
-                new Lion("사자", "심바"),
-                new Elephant("코끼리", "덤보"),
-                new Monkey("원숭이", "조조")
-        };
+    Animal[] animals;
+    int count;
 
-        System.out.println("=== 먹이 시간 ===");
-        for (Animal animal : animals) {
-            animal.feedingTime(animal);
+    public Zoo(int capacity) {
+        this.animals = new Animal[capacity];
+        this.count = 0;
+    }
+
+    public void addAnimal(Animal animal) {
+        if (count < animals.length) {
+            animals[count++] = animal;
+        }
+    }
+
+    public void feedingTime() {
+        for (int i = 0; i < count; i++) {
+            System.out.print(animals[i].breed + " " + animals[i].name + ": ");
+            animals[i].makeSound();
         }
     }
 }
