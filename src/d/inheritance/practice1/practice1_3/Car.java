@@ -1,4 +1,4 @@
-package d.inheritance.practice3;
+package d.inheritance.practice1.practice1_3;
 
 public class Car extends Vehicle {
 

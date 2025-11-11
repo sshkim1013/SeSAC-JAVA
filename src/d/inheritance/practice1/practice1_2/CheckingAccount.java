@@ -1,12 +1,12 @@
-package d.inheritance.practice2;
+package d.inheritance.practice1.practice1_2;
 
 public class CheckingAccount extends Account{
 
     // 필드 추가
     double overdraftLimit;
 
-    public CheckingAccount(String accountNumber1, int balance1, int overdraftLimit) {
-        super(accountNumber1, balance1);
+    public CheckingAccount(String accountNumber, double balance, double overdraftLimit) {
+        super(accountNumber, balance);
         this.overdraftLimit = overdraftLimit;
     }
 
@@ -16,6 +16,6 @@ public class CheckingAccount extends Account{
             balance -= amount;
         }
 
-        System.out.println("잔액이 부족합니다.");
+        System.out.println("잔액이 부족합니다. balance = " + balance);
     }
 }

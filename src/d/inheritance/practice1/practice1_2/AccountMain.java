@@ -1,4 +1,4 @@
-package d.inheritance.practice2;
+package d.inheritance.practice1.practice1_2;
 
 public class AccountMain {
 

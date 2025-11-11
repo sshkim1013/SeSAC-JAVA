@@ -1,4 +1,4 @@
-package d.inheritance.practice1;
+package d.inheritance.practice1.practice1_1;
 
 public class StudentMain {
 

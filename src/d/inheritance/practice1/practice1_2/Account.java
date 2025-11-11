@@ -1,11 +1,11 @@
-package d.inheritance.practice2;
+package d.inheritance.practice1.practice1_2;
 
 public class Account {
 
     String accountNumber;
     double balance;
 
-    public Account(String accountNumber, int balance) {
+    public Account(String accountNumber, double balance) {
         this.accountNumber = accountNumber;
         this.balance = balance;
     }
