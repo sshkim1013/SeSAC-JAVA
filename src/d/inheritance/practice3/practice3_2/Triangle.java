@@ -15,6 +15,6 @@ public class Triangle extends Shape {
 
     @Override
     void drawShape() {
-        System.out.println("변 " + side1 + ", " + side2 + ", " + side3 + " 삼각형 그리기");
+        System.out.println("변 " + side1 + ", " + side2 + ", " + side3 + "인 삼각형 그리기");
     }
 }
