@@ -1,6 +1,6 @@
 package e.generic.practice1.practice1_3;
 
-public class ArrayUtil<T> {
+public class ArrayUtil {
 
     public static <T> void printArray(T[] array) {
         for (T element : array) {
