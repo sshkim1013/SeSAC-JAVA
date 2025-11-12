@@ -1,4 +1,4 @@
-package e.generic;
+package f.collection;
 
 import java.util.ArrayList;
 import java.util.Arrays;
