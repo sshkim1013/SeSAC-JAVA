@@ -39,12 +39,21 @@ public class Practice02 {
             return new HashMap<>();
         }
 
-        Map<String, Integer> map = new HashMap<>();
+        HashMap<String, Integer> result = new HashMap<>();
 
+        // 아래 두 코드 중 하나만 사용
+
+        // 1. putIfAbsent() 메서드 사용
         for (String word : words) {
-            map.put(word, map.getOrDefault(word, 0) + 1);
+            result.putIfAbsent(word, 0);
+            result.put(word, result.get(word) + 1);
         }
 
-        return map;
+        // 2. getOrDefault() 메서드 사용
+        for (String word : words) {
+            result.put(word, result.getOrDefault(word, 0) + 1);
+        }
+
+        return result;
     }
 }

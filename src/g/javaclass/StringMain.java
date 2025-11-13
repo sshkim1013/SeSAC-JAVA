@@ -36,6 +36,7 @@ public class StringMain {
         System.out.println(str1.contains("H")); // true
 
         System.out.println(str1.startsWith("h"));   // false
+        System.out.println(str1.startsWith("H")); // true
         System.out.println(str1.endsWith("o")); // true
 
         System.out.println();

@@ -20,13 +20,12 @@ public class WrapperMain {
         // int v = w;
         // System.out.println(v);  // NullPointerException
 
+        // 파싱: 문자열 -> 숫자
         int parsed = Integer.parseInt("123");
         System.out.println(parsed); // 123(숫자)
 
         Integer a = 10;
         Integer b = 20;
         System.out.println(a.compareTo(b)); // -1 (10이 20보다 작다)
-
-
     }
 }

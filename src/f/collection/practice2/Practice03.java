@@ -40,19 +40,24 @@ public class Practice03 {
             return new HashMap<>();
         }
 
-        Map<Character, List<Integer>> map = new HashMap<>();
+        Map<Character, List<Integer>> result = new HashMap<>();
 
         for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
 
-            char key = str.charAt(i);
+            // 아래의 두 코드 중 하나만 사용
 
-            if (!map.containsKey(key)) {
-                map.put(key, new ArrayList<>());
+            // putIfAbsent() 메서드 사용
+            result.putIfAbsent(ch, new ArrayList<>());
+            result.get(ch).add(i);
+
+            // containsKey() 메서드 사용
+            if (!result.containsKey(ch)) {
+                result.put(ch, new ArrayList<>());
             }
-
-            map.get(key).add(i);
+            result.get(ch).add(i);
         }
 
-        return map;
+        return result;
     }
 }

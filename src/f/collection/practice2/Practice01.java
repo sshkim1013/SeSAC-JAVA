@@ -42,6 +42,7 @@ public class Practice01 {
             intSet2.add(num);
         }
 
+        // 교집합 구하기
         intSet1.retainAll(intSet2);
 
         return intSet1;
