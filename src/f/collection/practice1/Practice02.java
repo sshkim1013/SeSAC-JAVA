@@ -30,7 +30,7 @@ public class Practice02 {
 
     public static int findAfterRotation(ArrayList<Integer> list, int k, int target) {
         if (!list.isEmpty()) {
-            for (int i = 0; i < k; i++) {
+            for (int i = 0; i < k % list.size(); i++) {
                 Integer first = list.getFirst();
                 list.addLast(first);
                 list.removeFirst();

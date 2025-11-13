@@ -35,9 +35,10 @@ public class Practice04 {
 
     public static ArrayList<ArrayList<Integer>> countFrequency(ArrayList<Integer> list) {
 
-        ArrayList<ArrayList<Integer>> result = new ArrayList<>(); // 최종 결과를 담을 리스트
+        ArrayList<ArrayList<Integer>> result = new ArrayList<>();
 
-        for (int num : list) {
+        for (Integer num : list) {
+
             boolean found = false;
 
             for (ArrayList<Integer> pair : result) {
@@ -52,8 +53,8 @@ public class Practice04 {
                 ArrayList<Integer> newPair = new ArrayList<>();
                 newPair.add(num);
                 newPair.add(1);
-                result.add(newPair);
-            }
+                result.add(newPair)
+;            }
         }
 
         return result;

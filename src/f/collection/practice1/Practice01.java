@@ -36,16 +36,13 @@ public class Practice01 {
 
         for (Integer num : list) {
             if (num > max) {
+                secondMax = max;
                 max = num;
             } else if (num < max && num > secondMax) {
                 secondMax = num;
             }
         }
 
-        if (secondMax == Integer.MIN_VALUE) {
-            return -1;
-        }
-
-        return secondMax;
+        return (secondMax == Integer.MIN_VALUE) ? -1 : secondMax;
     }
 }
